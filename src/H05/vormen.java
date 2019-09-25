@@ -3,7 +3,7 @@ package H05;
 import java.applet.*;
 import  java.awt.*;
 
-public class kutopdracht extends Applet {
+public class vormen extends Applet {
     @Override
     public void paint(Graphics g) {
         g.drawLine(20,50,150 ,50);

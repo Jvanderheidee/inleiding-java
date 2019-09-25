@@ -1,7 +1,7 @@
 package H04;
 
-import java.applet.*;
-import java.awt.*;
+        import java.applet.*;
+        import java.awt.*;
 
 public class Opdracht6 extends Applet {
     @Override
