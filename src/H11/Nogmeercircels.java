@@ -3,8 +3,7 @@ package H11;
 import java.applet.Applet;
 import java.awt.*;
 
-public class meercircles extends Applet {
-
+public class Nogmeercircels extends Applet {
     @Override
     public void init() {
         setSize(1920,1080);
@@ -15,19 +14,20 @@ public class meercircles extends Applet {
     @Override
     public void paint(Graphics g) {
 
-        int y = 300;
+        int y = 75;
         int x = 300;
         int width = 50;
         int height = 50;
 
-        for (int i = 1; i <51; i++) {
+        for (int i = 1; i <101; i++) {
             g.drawOval(x,y,width,height);
             width += 10;
             height += 10;
-            x -= 5;
-            y -= 5;
+            x -= 1;
+            y -= 1;
 
         }
 
     }
 }
+
