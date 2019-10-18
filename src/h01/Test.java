@@ -1,22 +1,30 @@
 package h01;
 
+import java.applet.Applet;
 import java.awt.*;
-import java.applet.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+public class Test extends Applet {
+    Button knoprood,knopgrijs;
 
-public class Test extends Applet{
+    public void init() {
+        // rode muur
+        knoprood = new Button("klik hier voor de rode muur");
+        add(knoprood);
+        knoprood.addActionListener(new knoproodActionListener());
 
-    public void init() {}
+    }
+    class knoproodActionListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
 
-    public void paint(Graphics g) {
-        int teller = 20;
-        int y = 0;
-
-        while(teller < 10) {
-            y += 20;
-            g.drawLine(50 , y, 300, y );
-            g.drawString("" + teller, 305, y );
-            teller++;
         }
     }
+
+    public void paint(Graphics g) {
+
+    }
+
+
+
 }
